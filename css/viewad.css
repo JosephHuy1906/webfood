@@ -1,0 +1,272 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+}
+
+.chon {
+    width: 100px;
+}
+
+ul .chon:hover {
+    border: none;
+    background: orange;
+    color: white;
+    transition: ease 1s;
+}
+
+ul li a {
+    font-size: 20px;
+    text-decoration: none;
+    line-height: 40px;
+    color: black;
+}
+
+ul .title {
+    background: green;
+    border: none;
+}
+
+ul .title h3 {
+    color: white;
+    line-height: 40px;
+}
+
+.tren {
+    display: flex;
+}
+
+.tren h2 {
+    width: 80%;
+    margin-left: 20px;
+    line-height: 50px;
+    color: green;
+    line-height: 40px;
+}
+
+.tren nav {
+    width: 20%;
+    text-align: right;
+}
+
+.tren nav ul {
+    display: flex;
+    text-align: right;
+    right: 0;
+}
+
+.tren nav ul li {
+    list-style: none;
+    margin-right: 20px;
+}
+
+.tren nav ul li a {
+    text-decoration: none;
+    color: brown;
+    line-height: 50px;
+    font-size: 20px;
+}
+
+.tren nav ul li a i {
+    color: orange;
+}
+
+.duoi {
+    background: green;
+    color: white;
+}
+
+.duoi ul {
+    display: flex;
+    height: 40px;
+}
+
+.duoi ul li {
+    list-style: none;
+    margin-left: 20px;
+}
+
+.duoi ul li h3 {
+    line-height: 40px;
+}
+
+.duoi ul li a {
+    text-decoration: none;
+    color: white;
+    line-height: 40px;
+    font-size: 20px;
+
+}
+
+.main {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 10px;
+}
+
+main {
+    margin-top: 100px;
+    margin-left: 50px;
+    border: 1px solid black;
+    border-radius: 5px;
+
+    margin: auto;
+}
+
+main h2 {
+    padding-left: 10px;
+    background: orange;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+}
+
+main table {
+    margin: auto;
+    background: #f9f9f9;
+}
+
+main th {
+    border: 1px solid gray;
+    height: 50px;
+    background: greenyellow;
+}
+
+main td {
+    border: 1px solid gray;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+}
+
+main img {
+    width: 150px;
+    height: 100px;
+    object-fit: cover;
+}
+
+main .them {
+    width: 450px;
+}
+
+main .ad {
+    background: green;
+    line-height: 30px;
+    height: 30px;
+    width: 80px;
+}
+
+main .ad i {
+    font-size: 20px;
+}
+
+main .them {
+    width: 100px;
+    background: orange;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+}
+
+main .them:hover {
+    background: green;
+}
+
+main a {
+    text-decoration: none;
+    color: white;
+}
+
+main .an {
+    border: none;
+}
+
+main .a {
+    border: none;
+    height: 20px;
+}
+
+ul.sub_menu {
+    display: none;
+    width: 200px;
+    background: white;
+}
+
+.sub_menu li {
+    background: orange;
+    border-bottom: 1px solid white;
+    padding-left: 10px;
+}
+
+.sub_menu li a {
+    color: white;
+}
+
+ul>li:hover ul.sub_menu {
+    display: block;
+    position: absolute;
+}
+
+.sub_menu li:hover {
+    background: green;
+}
+
+.chuyentrang {
+    width: 100%;
+    display: flex;
+    margin-bottom: 100px;
+}
+
+.trang a {
+    color: black;
+    text-decoration: none;
+    line-height: 30px;
+    color: white;
+    font-size: 20px;
+}
+.page{
+    display: flex;
+    margin: auto;
+}
+.trang {
+    width: 50px;
+    height: 30px;
+    box-shadow: 0 0 5px black;
+    margin-left: 10px;
+    background: orange;
+    cursor: pointer;
+}
+
+.sua {
+    width: 400px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    box-shadow: 0 0 15px gray;
+}
+.sua h2{
+    margin-bottom: 20px;
+}
+.sua input{
+    width: 300px;
+    height: 40px;
+    padding-left: 10px;
+    background: #d6e4e3;
+    border: none;
+    margin: auto;
+    margin-top: 10px;
+}
+.sua input[type=file]{
+    background: none;
+    border: none;
+}
+.sua input[type=submit]{
+    background: orange;
+    border: none;
+    color: white;
+    cursor: pointer;
+}

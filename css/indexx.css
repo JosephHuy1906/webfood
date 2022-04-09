@@ -1,0 +1,1225 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Open+Sans:ital,wght@0,400;1,300;1,400&family=Roboto:wght@300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Open+Sans+Condensed:ital,wght@1,300&family=Open+Sans:ital,wght@0,400;1,300;1,400&family=Roboto:wght@300;400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 17px;
+  color: #000;
+  -webkit-font-smoothing: antialiased;
+  font-weight: lighter;
+}
+.header_top {
+  display: flex;
+}
+.logo {
+  margin-left: 50px;
+  width: 150px;
+  height: 100px;
+}
+.logo img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: cover;
+}
+.seachbox {
+  width: 500px;
+}
+.seach {
+  margin-left: 100px;
+  margin-top: 30px;
+  display: flex;
+  width: 700px;
+}
+.seach input {
+  width: 400px;
+  height: 40px;
+  border: solid 1px #d6e4e3;
+  border-right: none !important;
+  font-size: 15px;
+  background: rgb(216, 210, 210);
+  padding-left: 10px;
+}
+
+#timkiem {
+    width: 100px;
+    background: green;
+    color: white;
+  }
+.cart {
+  width: 50px;
+  height: 30px;
+  border: 1px solid #7ca877;
+  border-radius: 5px;
+  margin-top: 40px;
+  margin-left: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.nencart {
+  position: absolute;
+  margin-left: 40px;
+  margin-top: -7px;
+  width: 40px;
+  height: 40px;
+  background: #7ca877;
+  border-radius: 50%;
+}
+.nencart a {
+  position: absolute;
+  margin-left: 10px;
+  margin-top: 13px;
+  width: 30px;
+  height: 30px;
+  color: white;
+}
+.dangnhap{
+  width: 100px;
+  height: 100px;
+  margin-top: -4x;
+  margin-left: 20px;
+}
+.dangnhap a{
+  text-decoration: none;
+}
+.dangnhap a i{
+  font-size: 30px;
+}
+.hotline {
+  width: 150px;
+  height: 30px;
+  background: firebrick;
+  margin-top: 40px;
+  margin-left: 100px;
+  border-radius: 5px;
+  line-height: 30px;
+  cursor: pointer;
+}
+.hotline p {
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+.header_menu {
+  width: 100vw;
+}
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box;
+  background: white;
+  z-index: 9999;
+}
+nav {
+  background: #1a4200;
+}
+.header_menu nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+.header_menu nav ul li a {
+  font-size: 15px;
+  text-decoration: none;
+  color: white;
+  line-height: 50px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+.header_menu ul li a:hover {
+  color: rgb(219, 136, 76);
+}
+.about_title button:hover {
+  background: green;
+  color: white;
+}
+.info button:hover {
+  background: green;
+  color: white;
+}
+#toggle {
+  display: none;
+  color: white;
+  text-align: center;
+  background: chocolate;
+  font-size: 30px;
+  line-height: 50px;
+}
+.tabnho {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50px;
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 20px;
+  transition: 0.5s ease;
+}
+.tabnho:hover {
+  margin-top: 90px;
+}
+.tabnho button {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+  background: none;
+  border: 2px solid green;
+  border-radius: 5px;
+  color: green;
+}
+.tabnho button i {
+  font-size: 20px;
+}
+.tabnho button:hover {
+  background: green;
+  color: white;
+  box-shadow: 0 0 5px gray;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 158px;
+}
+.container_img {
+  margin-top: 10px;
+  display: flex;
+  width: 1000px;
+}
+.container img {
+  max-width: 700px;
+}
+.container .img {
+  overflow: hidden;
+}
+.container .img img {
+  max-width: 400px;
+  height: 80px;
+  margin-left: 10px;
+  cursor: pointer;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.container .img img:hover {
+  transform: scale(1.1);
+}
+.container_img img {
+  animation: Inout 5s infinite;
+}
+#slideshow {
+  overflow: hidden;
+  height: 386px;
+  width: 728px;
+  margin: 0 auto;
+  padding-right: 721px;
+}
+
+.slide-wrapper {
+  width: 2912px;
+  animation: slide 14s ease infinite;
+  z-index: 9999;
+}
+.title h2 {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 35px;
+  color: green;
+}
+.title hr {
+  width: 150px;
+  margin: auto;
+  opacity: 100%;
+}
+.about {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.about_img {
+  width: 600px;
+  height: 200px;
+}
+.about_img img {
+  max-width: 100%;
+  animation: about 5s infinite;
+}
+body::-webkit-scrollbar{
+  width: 20px;
+}
+body::-webkit-scrollbar-track{
+  background-color: rgb(238, 228, 228);
+}
+body::-webkit-scrollbar-thumb{
+  background-image: linear-gradient(to bottom, green, rgb(66, 228, 160), rgb(103, 238, 231));
+  height: 10px;
+}
+
+@keyframes about {
+  0%,
+  100% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(-20deg);
+  }
+}
+.about_title {
+  width: 500px;
+  height: 200px;
+  margin-left: 10px;
+  margin-top: 80px;
+}
+.about_title p {
+  font-size: 20px;
+  font-family: "Dancing Script", cursive;
+  text-align: justify;
+}
+.about_title button {
+  margin-top: 30px;
+  width: 150px;
+  height: 40px;
+  border: 2px solid green;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: green;
+  background: white;
+}
+.indexSanPham {
+  margin-top: 300px;
+}
+.indexSanPham hr {
+  opacity: 30%;
+}
+.indexSanPham .title hr {
+  width: 150px;
+  opacity: 100%;
+}
+.info a {
+  text-decoration: none;
+}
+.info h2 {
+  color: white;
+  font-weight: bold;
+}
+.info p {
+  font-size: 15px;
+  color: #ffffff;
+  opacity: 100;
+}
+.sanpham {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.sanpham1 {
+  width: 600px;
+  height: 146px;
+  overflow: hidden;
+}
+.sanpham1 .anh {
+  position: relative;
+}
+.sanpham1 .anh a img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sanpham1 .info {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+}
+.sanpham1:hover .anh a img {
+  transform: scale(1.1);
+}
+
+.sanpham2 {
+  width: 300px;
+  height: 146px;
+  overflow: hidden;
+}
+.sanpham2 .anh {
+  position: relative;
+}
+.sanpham2 .anh a img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sanpham2 .info {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+}
+.sanpham2:hover .anh a img {
+  transform: scale(1.1);
+}
+
+.sanpham3 {
+  width: 300px;
+  height: 146px;
+  overflow: hidden;
+}
+.sanpham3 .anh {
+  position: relative;
+}
+.sanpham3 .anh a img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sanpham3 .info {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+}
+.sanpham3:hover .anh a img {
+  transform: scale(1.1);
+}
+
+.sanpham4 {
+  width: 300px;
+  height: 146px;
+  overflow: hidden;
+}
+.sanpham4 .anh {
+  position: relative;
+}
+.sanpham4 .anh a img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sanpham4 .info {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+}
+.sanpham4:hover .anh a img {
+  transform: scale(1.1);
+}
+.sanpham5 {
+  width: 300px;
+  height: 146px;
+  overflow: hidden;
+}
+.sanpham5 .anh {
+  position: relative;
+}
+.sanpham5 .anh a img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sanpham5 .info {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+}
+.sanpham5:hover .anh a img {
+  transform: scale(1.1);
+}
+
+.sanpham6 {
+  width: 600px;
+  height: 146px;
+  overflow: hidden;
+}
+.sanpham6 .anh {
+  position: relative;
+}
+.sanpham6 .anh a img {
+  max-width: 100%;
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+.sanpham6 .info {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 20px;
+}
+.sanpham6:hover .anh a img {
+  transform: scale(1.1);
+}
+
+.indexTinKhuyenMai .title {
+  margin-top: 100px;
+}
+.nencart:hover {
+  background: green;
+}
+.seachbox span button:hover {
+  background: green;
+}
+.khuyenmai {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.khuyenmai1 {
+  display: flex;
+}
+.khuyenmai1 .anh {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.khuyenmai1 .anh img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s ease;
+}
+.khuyenmai1 .anh img:hover {
+  transform: scaleX(1.1);
+}
+.khuyenmai1 .info {
+  width: 300px;
+  height: 200px;
+  margin-left: -20px;
+}
+.khuyenmai1 .info p {
+  color: black;
+  font-size: 15px;
+}
+.khuyenmai1 .info p:hover {
+  color: green;
+  font-weight: bold;
+}
+.khuyenmai1 button {
+  margin-top: 100px;
+  width: 150px;
+  height: 40px;
+  border: 2px solid green;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: green;
+  background: white;
+}
+
+.khuyenmai2 {
+  display: flex;
+}
+.khuyenmai2 .anh {
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+}
+.khuyenmai2 .anh img {
+  max-width: 100%;
+  max-height: 100%;
+  transition: 0.5s ease;
+}
+.khuyenmai2 .anh img:hover {
+  transform: scaleX(1.1);
+}
+.khuyenmai2 .info {
+  width: 300px;
+  height: 200px;
+  margin-left: -20px;
+}
+.khuyenmai2 .info p {
+  color: black;
+  font-size: 15px;
+}
+.khuyenmai2 .info p:hover {
+  color: green;
+  font-weight: bold;
+}
+.khuyenmai2 button {
+  margin-top: 100px;
+  width: 150px;
+  height: 40px;
+  border: 2px solid green;
+  font-size: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  color: green;
+  background: white;
+}
+
+.indexCauChuyen .title {
+  margin-top: 100px;
+}
+.cauchuyen {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+.cauchuyen .left {
+  width: 300px;
+  height: 200px;
+}
+.cauchuyen .left img {
+  max-width: 100%;
+  max-height: 100%;
+}
+.cauchuyen .left a img {
+  max-width: 90%;
+  max-height: 90%;
+}
+.right1 {
+  display: flex;
+  margin-top: 10px;
+}
+.right1 .icon {
+  color: #1a4200;
+  font-size: 30px;
+  margin-right: 20px;
+}
+.right1 .titleRight {
+  width: 600px;
+}
+.right1 .titleRight h3 {
+  font-size: 20px;
+  color: #1a4200;
+}
+.right1 .titleRight p {
+  font-size: 15px;
+  text-align: justify;
+  color: #999999;
+}
+
+footer {
+  background: #f0f0f0;
+  width: 100vw;
+  margin-top: 80px;
+}
+.foter {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.foterphai {
+  display: flex;
+  flex-wrap: wrap;
+}
+.lienhevstoi {
+  text-align: left;
+}
+.lienhevstoi i {
+  margin: 5px;
+  color: black;
+  font-size: 20px;
+}
+.foter .logo {
+  width: 300px;
+  margin-left: -20px;
+  text-align: left;
+}
+
+.foter .gioithieu {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: -10px;
+}
+.foter .gioithieu h3 {
+  color: #1a4200;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.foter .gioithieu p {
+  color: #999999;
+  font-size: 15px;
+}
+
+.foter .songkhoe {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.foter .songkhoe h3 {
+  color: #1a4200;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.foter .songkhoe p {
+  color: #999999;
+  font-size: 15px;
+}
+
+.foter .giomocua {
+  width: 300px;
+  margin-top: 20px;
+  margin-left: 20px;
+}
+.foter .giomocua h3 {
+  color: #1a4200;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.foter .giomocua p {
+  color: #999999;
+  font-size: 15px;
+}
+
+.phanhoi {
+  width: 100vw;
+  height: 50px;
+  background: #99cd4e;
+  text-align: center;
+}
+.phanhoi input {
+  width: 400px;
+  height: 40px;
+  background: none;
+  border: 2px solid white;
+  border-radius: 5px;
+  color: white;
+  margin-top: 5px;
+}
+.header_menu nav ul li .khung {
+  color: rgb(219, 136, 76);
+}
+.phanhoi input::placeholder {
+  color: white;
+  padding-left: 10px;
+}
+.phanhoi a {
+  position: absolute;
+  font-size: 35px;
+  margin-left: 5px;
+}
+.phanhoi a i {
+  color: white;
+}
+
+.slide {
+  float: left;
+  height: 510px;
+  width: 728px;
+}
+.asidemenutop ul li a {
+  font-family: serif;
+}
+.asidemenubottom ul li a {
+  font-family: serif;
+}
+.asidemenubottom ul li .khung1 {
+  color: green;
+}
+.sanphamtraicay .traicay1 {
+  overflow: hidden;
+}
+.sanphamtraicay .traicay1 img {
+  display: block;
+  transition: 0.5s ease-in-out;
+}
+
+.sanphamtraicay .traicay1:hover img {
+  transform: scale(1.1);
+}
+.indexShip {
+  margin: auto;
+  width: 100vw;
+  margin-top: 50px;
+}
+.indexShip form {
+  margin: auto;
+  width: 500px;
+  height: 450px;
+  box-shadow: 0 0 5px;
+  text-align: center;
+  border-radius: 8px;
+}
+.indexShip form label {
+  font-size: 30px;
+  font-weight: bold;
+  color: green;
+}
+.indexShip form input {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #26975e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.indexShip form input::placeholder {
+  color: black;
+  padding-left: 5px;
+  font-size: 15px;
+}
+.indexShip form input:focus {
+  background-color: lightblue;
+  border: 2px solid #58257b;
+}
+.indexShip form textarea {
+  width: 350px;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 2px solid #26975e;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  outline: none;
+}
+.indexShip form textarea::placeholder {
+  color: black;
+  padding-left: 5px;
+  font-size: 15px;
+}
+.indexShip form textarea:focus {
+  background-color: lightblue;
+  border: 2px solid #58257b;
+}
+.indexShip form input[submit] {
+  background: green;
+}
+
+.indexShip form button {
+  width: 350px;
+  height: 40px;
+  border-radius: 10px;
+  background: green;
+  border: none;
+  color: white;
+  font-size: 18px;
+}
+.indexShip form button:hover{
+  background: orange;
+}
+@keyframes slide {
+  20% {
+    margin-left: 0px;
+  }
+  30% {
+    margin-left: -728px;
+  }
+  50% {
+    margin-left: -728px;
+  }
+}
+@media (max-width: 768px) {
+  .header_top {
+    max-width: 768px;
+  }
+  .seach input {
+    width: 200px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .seachbox {
+    width: 200px;
+    margin-left: -50px;
+  }
+  .seachbox form {
+    width: 200px;
+  }
+  .seachbox span {
+    margin-left: 310px;
+  }
+  .hotline {
+    display: none;
+  }
+  nav {
+    display: none;
+  }
+  .header_menu nav ul {
+    flex-direction: column;
+    text-align: center;
+  }
+  #toggle {
+    display: block;
+  }
+  header {
+    position: relative;
+  }
+  .container {
+    margin-top: 9px;
+  }
+  .cart {
+    margin-left: 250px;
+  }
+  .container_img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .container_img .img {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .tabnho {
+    display: none;
+  }
+  .container .img {
+    text-align: center;
+  }
+  .sanpham1 .info {
+    margin-top: -120px;
+  }
+  .sanpham2 .info {
+    margin-top: -120px;
+  }
+  .sanpham3 .info {
+    margin-top: -120px;
+  }
+  .sanpham4 .info {
+    margin-top: -120px;
+  }
+  .sanpham5 .info {
+    margin-top: -120px;
+  }
+  .sanpham6 .info {
+    margin-top: -100px;
+  }
+  .about_title {
+    margin-top: 320px;
+  }
+  .khuyenmai2 {
+    margin-top: 20px;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  .cauchuyen .left img {
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .cauchuyen .left img {
+    max-width: 600px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .cauchuyen .left a img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: cover;
+  }
+  .cauchuyen .right {
+    width: 600px;
+  }
+  .header_menu nav ul li:hover {
+    background: rgb(219, 136, 76);
+  }
+  .header_menu nav ul li a:hover {
+    color: white;
+  }
+  .right1 .titleRight h3 {
+    font-size: 15px;
+  }
+  .right1 .titleRight p {
+    font-size: 13px;
+  }
+  .cauchuyen .left {
+    width: 600px;
+    height: 558px;
+    text-align: center;
+  }
+  .foter .logo {
+    margin-left: 120px;
+  }
+  .khuyenmai1 button {
+    margin-top: 50px;
+  }
+  .khuyenmai2 button {
+    margin-top: 50px;
+  }
+  .foterphai {
+    margin-top: 80px;
+    justify-content: center;
+  }
+  .foter .gioithieu p {
+    font-size: 15px;
+  }
+  
+}
+@media (max-width: 412px) {
+  .logo {
+    display: none;
+  }
+
+  .header_top {
+    max-width: 390px;
+    margin-bottom: 20px;
+  }
+  .seach input {
+    width: 150px;
+    height: 40px;
+    margin-left: 10px;
+  }
+  .seachbox {
+    width: 200px;
+    margin-left: -90px;
+  }
+  .seachbox form {
+    width: 200px;
+  }
+  .slide {
+    width: 390px;
+    height: 180px;
+  }
+  #slideshow {
+    width: 390px;
+    height: 190px;
+    padding-right: 70px;
+  }
+  .slide-wrapper {
+    width: 2811px;
+  }
+}
+  @media (max-width: 500px) {
+    .logo {
+      display: none;
+    }
+  
+    .header_top {
+      max-width: 390px;
+      margin-bottom: 20px;
+    }
+    .seach input {
+      width: 150px;
+      height: 40px;
+      margin-left: 10px;
+    }
+    .seachbox {
+      width: 200px;
+      margin-left: -60px;
+    }
+    .seachbox form {
+      width: 200px;
+    }
+    .slide {
+      width: 390px;
+      height: 180px;
+    }
+    #slideshow {
+      width: 390px;
+      height: 190px;
+      padding-right: 70px;
+    }
+    .slide-wrapper {
+      width: 2811px;
+    }
+
+  @keyframes slide {
+    20% {
+      margin-left: 0px;
+    }
+    30% {
+      margin-left: -400px;
+    }
+  }
+  .seachbox span {
+    margin-left: 261px;
+  }
+  .cart {
+    margin-left: 150px;
+  }
+  .container img {
+    max-width: 350px;
+  }
+  .cauchuyen .right {
+    width: 300px;
+  }
+  .khuyenmai1 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .khuyenmai2 {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .about_img {
+    width: 300px;
+    height: 100px;
+  }
+  .about_title {
+    width: 300px;
+    height: 500px;
+    margin-top: 200px;
+  }
+  .container .img img {
+    max-width: 300px;
+    margin-left: 1px;
+    margin-top: 5px;
+  }
+  .indexSanPham {
+    margin-top: 50px;
+  }
+  .sanpham1 {
+    max-width: 300px;
+    max-height: 100px;
+    margin-bottom: -25px;
+  }
+  .sanpham1 .anh a img {
+    width: 386px;
+  }
+  .sanpham2 {
+    margin-bottom: -9px;
+    height: 100px;
+  }
+  .sanpham3 {
+    height: 100px;
+  }
+  .sanpham4 {
+    height: 100px;
+  }
+  .sanpham5 {
+    height: 100px;
+  }
+  .sanpham6 {
+    max-width: 300px;
+    max-height: 100px;
+  }
+  .sanpham6 .anh a img {
+    height: 100px;
+  }
+  .sanpham1 .info {
+    margin-top: -65px;
+  }
+  .sanpham6 .info {
+    margin-top: -69px;
+  }
+  .sanpham2 .info {
+    margin-top: -133px;
+  }
+  .khuyenmai1 button {
+    margin-top: 20px;
+  }
+  .khuyenmai2 button {
+    margin-top: 20px;
+  }
+  .cauchuyen .left img {
+    max-width: 300px;
+  }
+  .cauchuyen .left a img {
+    max-width: 300px;
+  }
+  .cauchuyen .left {
+    height: 428px;
+  }
+  .indexCauChuyen {
+    margin-top: -90px;
+  }
+  footer {
+    margin-top: 33px;
+  }
+  .phanhoi input {
+    width: 222px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: -60px;
+  }
+  .foter .logo {
+    width: 200px;
+    display: block;
+    margin-left: 50px;
+  }
+  header {
+    position: relative;
+  }
+  .logo img {
+    max-width: 200px;
+    max-height: 100px;
+    text-align: center;
+    object-fit: cover;
+  }
+  .title h2 {
+    font-size: 20px;
+  }
+  .container_img {
+    width: 350px;
+    justify-content: center;
+  }
+  .container {
+    width: 350px;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .khuyenmai2 .anh {
+    width: 321px;
+    height: 243px;
+  }
+  .khuyenmai1 .anh {
+    width: 300px;
+    height: 248px;
+  }
+  .khuyenmai1 .info {
+    width: 266px;
+    height: 200px;
+    margin-left: -20px;
+  }
+  .indexShip form {
+    width: 300px;
+    height: 450px;
+  }
+  .indexShip form input{
+    width: 250px;
+  }
+  .indexShip form textarea{
+    width: 250px;
+  }
+  .indexShip form button{
+    width: 250px;
+    font-size: 15px;
+  }
+  .indexShip form label{
+    font-size: 20px;
+  }
+}
+.tabnho button a{
+  color: green;
+  text-decoration: none;
+}
+.tabnho button a:hover{
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+}
+.thongtinqua input[type=submit]{
+  width: 150px;
+  height: 30px;
+  margin-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background: orange;
+  color: white;
+  border: none;
+}
+.thongtinqua input[type=submit]:hover{
+  background: orangered;
+  color: white;
+}
+.page{
+  display: flex;
+  justify-content: center;
+}
+.trang{
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+  margin-right: 10px;
+}
+.trang a{
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-decoration: none;
+  color: white;
+}
+.trang:hover{
+  background: green;
+  color: white;
+}
+.indexShip form input[type=submit] {
+  background: green;
+  color: white;
+}
+.indexShip form input[type=submit]:hover {
+  background: orangered;
+  color: white;
+  border: none;
+}

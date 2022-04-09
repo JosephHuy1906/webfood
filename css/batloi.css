@@ -1,0 +1,24 @@
+.loi {
+  font-size: 15px;
+  font-weight: bold;
+  color: brown;
+}
+
+h1 {
+  color: black;
+}
+
+label {
+  color: white;
+}
+
+article {
+  margin: 0 auto;
+  padding-left: 30px;
+}
+
+#timkiem {
+  width: 100px;
+  background: green;
+  color: white;
+}

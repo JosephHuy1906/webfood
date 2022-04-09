@@ -1,0 +1,101 @@
+.container{
+    width: 800px;
+    margin: auto;
+    margin-top: 50px;
+}
+.container h2{
+   color: green;
+   margin-bottom: 10px;
+}
+.container table{
+    width: 800px;
+    text-align: center;
+}
+.container table th{
+    width: 200px;
+    height: 40px;
+    background: green;
+    color: white;
+}
+.container table td{
+    width: 200px;
+    height: 50px;
+    background: lightgreen;
+}
+.container table td img{
+    width: 200px;
+    height: 150px;
+    object-fit: cover;
+}
+.container table td i{
+   font-size: 30px;
+}
+.container table td a{
+  text-decoration: none;
+  color: red;
+}
+.container table .tong{
+    color: yellow;
+}
+.set{
+    width: 200px;
+    margin: auto;
+    margin-top: 20px;
+}
+.set button{
+    width: 200px;
+    height: 40px;
+    background: orange;
+    color: white;
+    border: none;
+    font-weight: bold;
+    box-shadow: 0 0 5px gray;
+}
+.set button:hover{
+    background: orangered;
+}
+.tabnho button a{
+    color: green;
+    text-decoration: none;
+}
+.tabnho button a:hover{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+.thongtinqua input[type=submit]{
+    width: 150px;
+    height: 30px;
+    margin-top: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background: orange;
+    color: white;
+    border: none;
+}
+.thongtinqua input[type=submit]:hover{
+    background: orangered;
+    color: white;
+}
+.page{
+    display: flex;
+    justify-content: center;
+}
+.trang{
+    width: 50px;
+    height: 50px;
+    background: lightgreen;
+    margin-right: 10px;
+}
+.trang a{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-decoration: none;
+    color: white;
+}
+.trang:hover{
+    background: green;
+    color: white;
+}

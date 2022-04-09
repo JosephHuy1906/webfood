@@ -1,0 +1,263 @@
+// Tạo database
+
+    CREATE DATABASE asm1;
+
+    CREATE TABLE `asm`.`admin` ( `id` INT NOT NULL AUTO_INCREMENT , 
+    `username` VARCHAR(255) NOT NULL , `password` VARCHAR(255) NOT NULL ,
+     `name` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+     CREATE TABLE `asm`.`user` ( `id` INT NOT NULL AUTO_INCREMENT , 
+     `username` VARCHAR(255) NOT NULL , `password` VARCHAR(255) NOT NULL ,
+      `name` VARCHAR(255) NOT NULL , PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+      CREATE TABLE `asm`.`traicay` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`raucu` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`giavi` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`thucuong` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`thittrung` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`hangkho` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`kembo` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`phithucpham` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`haisan` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`douongcon` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+        CREATE TABLE `asm`.`sanpham` ( `id` INT NOT NULL AUTO_INCREMENT , 
+      `hinh` VARCHAR(255) NOT NULL , `tensp` VARCHAR(255) NOT NULL ,
+       `gia` INT NOT NULL ,`xuatxu` VARCHAR(255) NOT NULL,`quycach` VARCHAR(255) NOT NULL,
+        PRIMARY KEY (`id`)) ENGINE = InnoDB;
+
+// chèn dữ liệu vào bảng trái cây
+
+        INSERT INTO `traicay` (`id`, `tensp`, `gia`, `xuatxu`, `quycach`, `hinh`) 
+        VALUES (NULL, 'Việt Quất', '145000', 'NEW ZEALAND', 'Hộp 125G', 'vietquat.png'), 
+        (NULL, 'CHUỐI FOHLA', '25700', 'VIỆT NAM', '500G', 'chuoi.png'), 
+        (NULL, 'ỔI PHÚC LỘC THỌ', '29900', 'VIỆT NAM', '500G', 'oi.png'), 
+        (NULL, 'DÂU TÂY GIỐNG NHẬT FAMILY', '132800', 'VIỆT NAM', '250G', 'dau.png'), 
+        (NULL, 'CAM NAVEL', '98900', 'ÚC', '1KG', 'cam-navel_grande.png'), 
+        (NULL, 'TÁO XANH', '155000', 'MỸ, PHÁP', '1KG', 'taoxanh.png'), 
+        (NULL, 'TÁO GALA', '145800', 'VIỆT NAM', '500G', 'bom.png'), 
+        (NULL, 'NHO XANH KHÔNG HẠT ÚC', '224000', 'ÚC', 'Hộp 500G', 'nho-xanh.png'), 
+        (NULL, 'XOÀI CÁT HOA LỘC', '645400', 'VIỆT NAM', '500G', 'xoai.png'), 
+        (NULL, 'QUÝT', '84890', 'ÚC', '500G', 'quyt_grande.png'), 
+        (NULL, 'CHERRY NEW ZEALAND', '188000', 'NEW ZEALAND', 'Hộp 300G', 'cherry.png'), 
+        (NULL, 'KIWI VÀNG', '149000', 'NEW ZEALAND, PHÁP', '500G', 'trai-kiwi-vang_grande.png')
+
+// chèn dữ liệu vào bảng thức uống
+
+        INSERT INTO `thucuong` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__nuoc-khoang-co-ga-alba_grande.png', 'NƯỚC KHOÁNG ALBA', '6900', 'VIỆT NAM', '500ML'), 
+        (NULL, 'AnyConv.com__nuoc-khoang-co-ga.png', 'NƯỚC KHOÁNG EVIAN', '34250', 'PHÁP', '500ML'), 
+        (NULL, 'sua-australia_grande.png', 'SỮA HẠT NHÂN ÚC', '29000', 'ÚC', '1L'), 
+        (NULL, 'AnyConv.com__nuoc-soda-schweppes_grande.png', 'NƯỚC SODA SCHWEPPES', '9900', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__sua-chua-khong-duong.png', 'SỮA CHUA KHÔNG ĐƯỜNG', '41500', 'VIỆT NAM', '500ML'),
+        (NULL, 'sua-thanh-trung-dalak.png', 'SỮA THANH TRÙNG DALAT', '44000', 'VIỆT NAM', '950ML'), 
+        (NULL, 'AnyConv.com__nuoc-perrier.png', 'NƯỚC KHOÁNG PERRIER', '41000', 'PHÁP', '330ML'), 
+        (NULL, 'AnyConv.com__yakult.png', 'SỮA CHUA YAKULT', '27500', 'VIỆT NAM', '5 CHAI/LỐC'), 
+        (NULL, 'AnyConv.com__nuoc-lavie.png', 'NƯỚC KHOÁNG LAVIE', '5000', 'VIỆT NAM', '500ML'), 
+        (NULL, 'AnyConv.com__nuoc-schweppes.png', 'NƯỚC TONIC SCHWEPPES', '10000', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__nuoc-perrier-750ml.png', 'NƯỚC KHOÁNG PERRIER', '62900', 'PHÁP', '750ML'), 
+        (NULL, 'AnyConv.com__sua-triet-trung.png', 'SỮA TRIỆT TRÙNG MILK', '15000', 'VIỆT NAM', '180ML')
+
+// chèn dữ liệu vào bảng thịt trứng
+
+        INSERT INTO `thittrung` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__thit-mat-ong.png', 'THỊT NGUỘI TẨM MẬT ONG', '78000', 'VIỆT NAM', '200G'), 
+        (NULL, 'AnyConv.com__thit-bo-uc-xay.png', 'THỊT BÒ XAY ĐÔNG LẠNH', '56615', 'ÚC', '150G'), 
+        (NULL, 'AnyConv.com__thit-nguoi-pas.png', 'THỊT NGUỘI PARMA DOP 13', '111900', 'Ý', '150G'), 
+        (NULL, 'AnyConv.com__thit-heo-xong-khoi-parma-ham.png', 'JAMBON KHÔNG XƯƠNG PARMA', '194900', 'HÀNG NHẬP KHẨU', '100G'), 
+        (NULL, 'AnyConv.com__thit-giam-bong-parma_grande.png', 'THỊT HEO MUỐI PARMA', '185600', 'Ý', '100G'), 
+        (NULL, 'AnyConv.com__thit-burger-xay.png', 'THỊT BURGER ĐÔNG LẠNH', '56600', 'ÚC', '150G'), 
+        (NULL, 'thit-bo-cebon-xay-300g_grande.png', 'THỊT BÒ CENBON XAY', '105500', 'VIỆT NAM', '300G'), 
+        (NULL, 'thit-heo-muoi.png', 'THỊT JAMBON HEO MUỐI', '104900', 'PHÁP', '100G'), 
+        (NULL, 'AnyConv.com__ba_roi_xong_khoi.png', 'BA RỌI XONG KHÓI', '66000', 'VIỆT NAM', '200G'), 
+        (NULL, 'ga-tay-xong-khoi.png', 'GÀ TÂY XONG KHÓI', '52900', 'TÂY BAN NHA', '100G'), 
+        (NULL, 'AnyConv.com__thi-bo-hamburger-rum.png', 'THỊT BÒ HAMBURGER RUM', '69700', 'ÚC', '150G'), 
+        (NULL, 'AnyConv.com__thit-hop.png', 'THỊT HỘP NGUYÊN VỊ', '109000', 'MỸ', 'HỘP: 340G')
+
+// chèn dữ liệu vào bảng sản phẩm
+
+        INSERT INTO `sanpham` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'vietquat.png', 'Việt Quất', '145000', 'NEW ZEALAND', 'Hộp 125G'), 
+        (NULL, 'chuoi.png', 'CHUỐI FOHLA', '25700', 'VIỆT NAM', '500G'), 
+        (NULL, 'oi.png', 'ỔI PHÚC LỘC THỌ', '29900', 'VIỆT NAM', '500G'), 
+        (NULL, 'dau.png', 'DÂU TÂY GIỐNG NHẬT FAMILY', '132800', 'VIỆT NAM', '250G'), 
+        (NULL, 'cam-navel_grande.png', 'CAM NAVEL', '98900', 'ÚC', '1KG'), 
+        (NULL, 'taoxanh.png', 'TÁO XANH', '155000', 'MỸ, PHÁP', '1KG'), 
+        (NULL, 'bom.png', 'TÁO GALA', '145800', 'VIỆT NAM', '500G'), 
+        (NULL, 'nho-xanh.png', 'NHO XANH KHÔNG HẠT ÚC', '224000', 'ÚC', 'Hộp 500G'), 
+        (NULL, 'xoai.png', 'XOÀI CÁT HOA LỘC', '645400', 'VIỆT NAM', '500G'), 
+        (NULL, 'quyt_grande.png', 'QUÝT', '84890', 'ÚC', '500G'), 
+        (NULL, 'cherry.png', 'CHERRY NEW ZEALAND', '188000', 'NEW ZEALAND', 'Hộp 300G'),
+        (NULL, 'trai-kiwi-vang_grande.png', 'KIWI VÀNG', '149000', 'NEW ZEALAND, PHÁP', '500G'), 
+        (NULL, 'AnyConv.com__nuoc-khoang-co-ga-alba_grande.png', 'NƯỚC KHOÁNG ALBA', '6900', 'VIỆT NAM', '500ML'), 
+        (NULL, 'AnyConv.com__nuoc-khoang-co-ga.png', 'NƯỚC KHOÁNG EVIAN', '34250', 'PHÁP', '500ML'), 
+        (NULL, 'sua-australia_grande.png', 'SỮA HẠT NHÂN ÚC', '29000', 'ÚC', '1L'), 
+        (NULL, 'AnyConv.com__nuoc-soda-schweppes_grande.png', 'NƯỚC SODA SCHWEPPES', '9900', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__sua-chua-khong-duong.png', 'SỮA CHUA KHÔNG ĐƯỜNG', '41500', 'VIỆT NAM', '500ML'), 
+        (NULL, 'sua-thanh-trung-dalak.png', 'SỮA THANH TRÙNG DALAT', '44000', 'VIỆT NAM', '950ML'), 
+        (NULL, 'AnyConv.com__nuoc-perrier.png', 'NƯỚC KHOÁNG PERRIER', '41000', 'PHÁP', '330ML'), 
+        (NULL, 'AnyConv.com__yakult.png', 'SỮA CHUA YAKULT', '27500', 'VIỆT NAM', '5 CHAI/LỐC'), 
+        (NULL, 'AnyConv.com__nuoc-lavie.png', 'NƯỚC KHOÁNG LAVIE', '5000', 'VIỆT NAM', '500ML'), 
+        (NULL, 'AnyConv.com__nuoc-schweppes.png', 'NƯỚC TONIC SCHWEPPES', '10000', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__nuoc-perrier-750ml.png', 'NƯỚC KHOÁNG PERRIER', '62900', 'PHÁP', '750ML'), 
+        (NULL, 'AnyConv.com__sua-triet-trung.png', 'SỮA TRIỆT TRÙNG MILK', '15000', 'VIỆT NAM', '180ML'), 
+        (NULL, 'AnyConv.com__thit-mat-ong.png', 'THỊT NGUỘI TẨM MẬT ONG', '78000', 'VIỆT NAM', '200G')
+
+// chèn dữ liệu vào bảng rau củ
+
+        INSERT INTO `raucu` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'oliu-xanh.png', 'OLIU XANH TÁCH HẠT', '62500', 'TÂY BAN NHA', 'Hộp 235G'), 
+        (NULL, 'toiuc.png', 'TỎI ÚC', '104500', 'ÚC', '200G'), 
+        (NULL, 'bi.png', 'BÍ XANH', '31000', 'VIỆT NAM', '500G'), 
+        (NULL, 'hanh.png', 'HÀNH LÝ SƠN', '31900', 'VIỆT NAM', '200G'), 
+        (NULL, 'dua-chuot.png', 'DƯA CHUỘT BAO TỬ', '45500', 'VIỆT NAM', 'Hộp 650G'), 
+        (NULL, 'khoailangvang.png', 'KHOAI TÂY VÀNG MỸ', '36000', 'MỸ', '500G'), 
+        (NULL, 'gung.png', 'GỪNG GIÀ NHẬT', '105900', 'NHẬT', '100G'), 
+        (NULL, 'ca-chua.png', 'CÀ CHUA NGUYÊN QUẢ', '49000', 'Ý', 'Hộp 400G'), 
+        (NULL, 'khoaimotim.png', 'KHOAI MỠ TÍM', '25200', 'VIỆT NAM', '500G'), 
+        (NULL, 'carot.png', 'CÀ RỐT', '20500', 'VIỆT NAM', '100G'), 
+        (NULL, 'xa.png', 'CÂY XÃ', '6970', 'VIỆT NAM', '100G'), 
+        (NULL, 'chanh.png', 'CHANH XANH KHÔNG HẠT', '39000', 'VIỆT NAM', '100G')
+
+// chèn dữ liệu vào bảng phi thực phẩm
+
+        INSERT INTO `phithucpham` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__tui-dung-hang-sieu-thi_grande.png', 'TÚI ĐỰNG HÀNG SIÊU THỊ', '24900', 'VIỆT NAM', '1 CÁI'), 
+        (NULL, 'AnyConv.com__xa-phong-dua-huu-co-huong-hoac-huong-niugini_grande.png', 'XÀ PHÒNG DỪA HỮU CƠ', '109890', 'ÚC', '100G'), 
+        (NULL, 'AnyConv.com__nuoc-lau-kinh-lemon.png', 'NƯỚC LAU KÍNH LEMON', '179900', 'ÚC', '500ML'), 
+        (NULL, 'AnyConv.com__giay-nen-nuong-banh-khong-dinh-moriitalia_grande.png', 'GIẤY NẾN NƯỚNG BÁNH', '65900', 'VIỆT NAM', '1 CUỘN'), 
+        (NULL, 'AnyConv.com__mieng-rua-chen-2-lop.png', 'MIẾNG RỬA CHÉN 2 LỚP', '41500', 'THỖ NHĨ KÌ', 'MIẾNG'), 
+        (NULL, 'AnyConv.com__nuoc-rua-chen-quyt.png', 'NƯỚC RỬA CHÉN HƯƠNG QUÝT', '165000', 'ÚC', '500ML'), 
+        (NULL, 'AnyConv.com__khan-giay-softback-200-to-tendersoft_grande.png', 'KHĂN GIẤY SOFTBACK', '29500', 'VIỆT NAM', '200 TỜ'), 
+        (NULL, 'khan-tre-em.png', 'KHẨU TRANG TRẺ EM', '18000', 'VIỆT NAM', '10 CÁI'), 
+        (NULL, 'AnyConv.com__tui-dung-thuc-pham-co-khoa-eufood-size-xl-10pcs_grande.png', 'TÚI ĐỰNG CÓ KHÓA', '31500', 'VIỆT NAM', '35CM x 28CM'), 
+        (NULL, 'AnyConv.com__tam-bong-ve-sinh.png', 'TĂM BÔNG VỆ SINH', '18500', 'PHÁP', '160 CÁI'), 
+        (NULL, 'hop-go-goi-qua-_grande.png', 'HỘP GỖ GÓI QUÀ', '168600', 'VIỆT NAM', '1 HỘP'), 
+        (NULL, 'AnyConv.com__nuoc-tay-rau-chanh.png', 'NƯỚC TẨY RỬA LEMON', '161000', 'ÚC', '500ML')
+
+// chèn dữ liệu vào bảng kem bơ
+
+        INSERT INTO `kembo` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__phomai-feta.png', 'PHÔ MAI FETA', '70900', 'ĐỨC', '200G'), 
+        (NULL, 'AnyConv.com__bo-lat-emborg (1).png', 'BƠ LẠT EMBORG', '57325', 'DENMARK', 'THANH'), 
+        (NULL, 'AnyConv.com__vang-sua-socola.png', 'VÁNG SỮA SOCOLA ELLE', '21900', 'PHÁP', '100G'), 
+        (NULL, 'AnyConv.com__phomai-bao.png', 'PHÔ MAI BÀO MOZZARELA', '88900', 'VIỆT NAM', '200G'), 
+        (NULL, 'AnyConv.com__vang-sua-huong-vani.png', 'VÁNG SỮA HƯƠNG VANI', '21500', 'PHÁP', '100G'), 
+        (NULL, 'AnyConv.com__bo-lat-emborg.png', 'BƠ LẠT EMBORG', '70000', 'VIỆT NAM', '2 THANH'), 
+        (NULL, 'AnyConv.com__phomai-gouda.png', 'PHÔ MAI GOUDA', '36500', 'NETHERLANDS', '100G'), 
+        (NULL, 'AnyConv.com__pho-mai-mozzarella.png', 'PHÔ MAI BÀO MOZZARELLA', '109900', 'ĐAN MẠCH', '200G'), 
+        (NULL, 'AnyConv.com__pho-mai-mozzarella-emborg.png', 'PHÔ MAI MOZZARELLA EMBORG', '99000', 'ĐAN MẠCH', '200G'), 
+        (NULL, 'AnyConv.com__ppphomai-prasan.png', 'PHÔ MAI PARMESAN FROMAGIO', '139900', 'Ý', '200G'), 
+        (NULL, 'AnyConv.com-bolat-82.png', 'BƠ LẠT 82% BÉO', '128890', 'PHÁP', '200G'), 
+        (NULL, 'AnyConv.com__phomai-bot.png', 'PHÔ MAI BỘT ZELACHI', '85000', 'VIỆT NAM', '100G')
+
+// chèn dữ liệu vào bảng hàng khô
+
+        INSERT INTO `hangkho` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__my_spaghetti.png', 'MỲ SỢI LINGUINE', '65900', 'Ý', '500G'), 
+        (NULL, 'chiet-xuat-vanilia.png', 'CHIẾT XUẤT VANILLA', '225923', 'ÚC', '50ML'), 
+        (NULL, 'AnyConv.com__bot-vo-hat-ma.png', 'BỘT VÕ HẠT MÃ ĐỀ', '269900', 'ÚC', '200G'), 
+        (NULL, 'AnyConv.com__ngu-coc-gion_grande.png', 'NGŨ CỐC NƯỚNG GIÒN', '143000', 'VIỆT NAM', '325G'), 
+        (NULL, 'AnyConv.com__bun-tuoi.png', 'BÚN TƯƠI MEKONG RIVER', '26500', 'VIỆT NAM', '1.2MM/300G'), 
+        (NULL, 'AnyConv.com__vien-nen-cafe.png', 'VIÊN NÉN CAFE ARPEGGIO', '235000', 'THỤY SỸ', '50G'), 
+        (NULL, 'AnyConv.com__hat-maca-nu-hoang.png', 'HẠT MACCA NỮ HOÀNG', '138500', 'VIỆT NAM', '250G'), 
+        (NULL, 'AnyConv.com__vien-cafe-nen-ristretto.png', 'VVIEEN NÉN CAFE RISTRETTO', '265000', 'THỤY SỸ', '50G'), 
+        (NULL, 'AnyConv.com__bun-kho-quynh-coi.png', 'BÚN KHÔ QUỲNH CÔI', '20000', 'VIỆT NAM', '300G'), 
+        (NULL, 'AnyConv.com__vien-cafe-nen-nesfix.png', 'VIÊN NÉN CAFE NESPRESSO', '235500', 'THỤY SỸ', '50G'), 
+        (NULL, 'AnyConv.com__socola-sau-nhan-hat-thi.png', 'SOCOLA SỮA NHÂN HẠT THỈ', '37700', 'Ý', '37.5G'), 
+        (NULL, 'AnyConv.com__my_spaghetti.png', 'MỲ SPAGHETTI BARILLA', '27500', 'Ý', '200G')
+
+// chèn dữ liệu vào bảng hải sản
+
+        INSERT INTO `haisan` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__ca-ngu-ngam-nuoc.png', 'CÁ NGỪ ESSENTIAL', '47900', 'MỸ', 'HỘP 124G'), 
+        (NULL, 'AnyConv.com__ca-moi-sot-ca.png', 'CÁ MÒI SỐT CÀ RAMIEZ', '51000', 'BỒ ĐÀO NHA', 'HỘP 125G'), 
+        (NULL, 'thanh-cua-holo.png', 'THANH CUA HOSO MAKI', '111900', 'NHẬT BẢN', '500G'), 
+        (NULL, 'AnyConv.com__ca-trich-ngam-dau.png', 'CÁ TRÍCH NGÂM DẦU', '65500', 'NGA', 'HỘP 160G'), 
+        (NULL, 'AnyConv.com__ca-moi-ngam-dau-thuc-vat.png', 'CÁ MÒI NGÂM DẦU', '51500', 'BỒ ĐÀO NHA', 'HỘP 125G'), 
+        (NULL, 'AnyConv.com__ca-moi-555.png', 'CÁ MÒI 555 NGÂM DẦU', '20500', 'PHILIPPINES', 'HỘP 150G'), 
+        (NULL, 'thit-tom-su.png', 'THỊT TÔM SÚ', '153500', 'VIỆT NAM', 'HỘP 300G'), 
+        (NULL, 'AnyConv.com__ca-com-ngam-dau.png', 'CÁ CƠM NGÂM DẦU', '63500', 'TÂY BAN NHA', 'HỘP 50G'), 
+        (NULL, 'AnyConv.com__ca-ngu-ngam-dau.png', 'CÁ NGỪ CENTURY NGÂM DẦU', '39000', 'PHILIPPINES', 'HỘP 184G'), 
+        (NULL, 'ca-ngu-ngam-dau-ha-long.png', 'CÁ NGỪ HẠ LONG', '55900', 'VIỆT NAM', 'HỘP 175G'), 
+        (NULL, 'AnyConv.com__ca-basa-huu-co.png', 'CÁ BASA PHI LÊ BINCA', '62750', 'PHÁP', 'HỘP 250G'), 
+        (NULL, 'AnyConv.com__ca-ngu-ngam-nuoc-muoi.png', 'CÁ NGỪ CENTURRY MUỐI', '15000', 'PHILIPPINES', 'HỘP 170G')
+
+// chèn dữ liệu vào bảng gia vị
+
+        INSERT INTO `giavi` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__dau-latino-bella (1).png', 'DẦU OLIVE NGUYÊN CHẤT', '344500', 'TÂY BAN NHA', '1L'), 
+        (NULL, 'AnyConv.com__sot-barilla-sauce-basilico.png', 'SỐT BARILLA BASILICO', '112400', 'Ý', '400G'), 
+        (NULL, 'AnyConv.com__nuoc-cot-dua.png', 'NƯỚC CỐT DỪA', '39900', 'VIỆT NAM', '1 CHAI'), 
+        (NULL, 'AnyConv.com__tuong-dashi.png', 'TƯƠNG DAISHI MISO', '87000', 'NHẬT BẢN', '300G'), 
+        (NULL, 'AnyConv.com__gia-vi-nau-pho.png', 'GIA VỊ PHỞ BÒ', '15500', 'VIỆT NAM', '1 BỊCH'), 
+        (NULL, 'AnyConv.com__sot-barilla-pesto-genovese.png', 'SỐT PESTO GENOVESE', '159450', 'Ý', '190G'), 
+        (NULL, 'AnyConv.com__sot-thit-bolognese-barilla.png', 'SỐT BOLOGNESE BARILLA', '139900', 'Ý', '400G'), 
+        (NULL, 'AnyConv.com__bot-ngu-vi-huong.png', 'BỘT NGŨ VỊ HƯƠNG', '10000', 'VIỆT NAM', '10G'), 
+        (NULL, 'AnyConv.com__bot-nem-gia-vi.png', 'BỘT NÊM GIA VỊ GÀ', '22000', 'ÚC', '35G'), 
+        (NULL, 'AnyConv.com__bot-gia-vi-cari-cha-an-do_grande.png', 'BỘT CARI ẤN ĐỘ', '15000', 'VIỆT NAM', '25G'), 
+        (NULL, 'AnyConv.com__que-cay-viet-pepper.png', 'QUẾ CÂY PERRIER', '11000', 'PHÁP', '20G'), 
+        (NULL, 'AnyConv.com__gia-vi-bo-kho-3735_grande.png', 'GIA VỊ BÒ KHO', '15000', 'VIỆT NAM', '25G')
+
+// chèn dữ liệu vào bảng đồ uống có cồn
+
+        INSERT INTO `douongcon` (`id`, `hinh`, `tensp`, `gia`, `xuatxu`, `quycach`) VALUES 
+        (NULL, 'AnyConv.com__bia-thu-cong.png', 'BIA THỦ CÔNG BELGO', '55900', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-tiger.png', 'BIA TIGER LAGER', '19000', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-thu-cong-platinum.png', 'BIA THỦ CÔNG PLATINUM', '47900', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-white.png', 'BIA WHITE HOEGAARDEN', '34900', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-blonde.png', 'BIA BLONDE ROOSTER BEERS', '41500', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-sapporo-silver.png', 'BIA SAPPORO SILVER', '21900', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-wildside-lemongrass.png', 'SODA CHANH XẢ WILDSIDE', '24500', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-heineken.png', 'BIA HEINEKEN', '27500', 'VIỆT NAM', '330ML'), 
+        (NULL, 'AnyConv.com__bia-stella-artois.png', 'BIA STELLA ARTOIS', '45000', 'BỈ', '330ML'), 
+        (NULL, 'AnyConv.com__bia-corona.png', 'BIA CORONA', '45000', 'MEXICO', '355ML'), 
+        (NULL, 'AnyConv.com__bia-blonde.png', 'BIA BLONDE LEFFE', '62500', 'BỈ', '330ML'), 
+        (NULL, 'AnyConv.com__bia-brune-leffe.png', 'BIA BRUNE LEFFE', '49000', 'BỈ', '330ML')
+
+// chèn dữ liệu vào bảng admin
+
+        INSERT INTO `admin` (`id`, `username`, `password`, `name`) VALUES 
+        (NULL, 'admin', '12345', 'Nguyễn Quang Huy'), 
+        (NULL, 'admin123', '12345', 'Nguyễn Quang Vinh')
+
+

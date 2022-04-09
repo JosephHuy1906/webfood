@@ -1,0 +1,162 @@
+header{
+    position: relative;
+}
+.main{
+    width: 100vw;
+    height: 700px;
+    position: relative;
+    padding-top: 100px;
+    background: url('../images/bg_login.jpg');
+    background-position: center;
+}
+.login {
+    width: 700px;
+    height: 400px;
+    margin: auto;
+    display: flex;
+    border: none;
+    box-shadow: 0 0 20px rgb(37, 37, 37);
+}
+
+h2 {
+    text-align: center;
+    color: green;
+    font-family: cursive;
+    font-size: 3rem;
+    text-shadow: 5px 2px 4px grey;
+}
+
+.login form {
+    padding-left: 20px;
+    width: 350px;
+    background: #eee;
+}
+
+hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 300px;
+    margin-right: 100px;
+}
+.error{
+    margin-bottom: 20px;
+    color: #A94442;
+    text-align: left;
+    background: #F2DEDE;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 10px;
+}
+.login form h2 {
+    border-left: 4px solid green;
+    padding-left: 10px;
+    line-height: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color: green;
+    font-size: 25px;
+    text-align: left;
+    text-shadow: none;
+    margin-top: 5px;
+
+}
+
+.login form input {
+    width: 300px;
+    height: 40px;
+    margin-bottom: 20px;
+    background: #e9e8e8;
+    border: 1px solid #d3d0d0;
+    padding-left: 10px;
+    cursor: pointer;
+}
+.login form .check{
+    width: 20px;
+    height: 20px;
+} 
+
+.login form input[type=submit] {
+    width: 300px;
+    height: 30px;
+    border: none;
+    background: green;
+    color: white;
+    box-shadow: 0 0 15px rgb(209, 207, 207);
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.other {
+    width: 350px;
+    padding-left: 10px;
+    background: #4285f4;
+}
+
+.other h2{
+    color: white;
+    text-align: center;
+    margin-top: 100px;
+}
+.other h3,p {
+    color: white;
+    text-align: center;
+}
+
+.other button {
+    width: 150px;
+    height: 30px;
+    border: 1px solid white;
+    background: none;
+    box-shadow: 0 0 15px rgb(209, 207, 207);
+    cursor: pointer;
+    margin-top: 20px;
+    margin-left: 90px;
+}
+.other button:hover{
+    background: green;
+    border: none;
+}
+.other button a{
+    text-decoration: none;
+    color: white;
+}
+
+.other p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+.phuongthuc {
+    display: flex;
+    margin-top: 55px;
+}
+
+.phuongthuc .face {
+    width: 110px;
+    height: 30px;
+    border: none;
+    background: blue;
+    color: white;
+    margin-right: 10px;
+}
+
+.phuongthuc .gool {
+    width: 180px;
+    height: 30px;
+    border: none;
+    background: #4285f4;
+    color: white;
+    box-shadow: 0 0 5px gray;
+    cursor: pointer;
+}
+
+.phuongthuc i {
+    margin-right: 10px;
+}
+footer {
+    background: #f0f0f0;
+    width: 100vw;
+    margin-top: 0px;
+}

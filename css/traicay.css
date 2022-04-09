@@ -1,0 +1,198 @@
+.menumain {
+  margin-left: 50px;
+}
+.menumain ul li {
+  float: left;
+  list-style: none;
+  margin-left: 10px;
+}
+.menumain ul li a {
+  text-decoration: none;
+  color: black;
+}
+.menumain ul li a:hover {
+  color: green;
+}
+.main {
+  width: 100vw;
+  display: flex;
+}
+aside {
+  width: 400px;
+  margin-top: 20px;
+}
+.tieudetrang h3{
+  margin-left: 20px;
+}
+.asidemenutop {
+  width: 300px;
+  border: 1px solid black;
+  margin-left: 50px;
+  height: 100px;
+  margin-top: 45px;
+}
+.asidemenutop ul {
+  margin-left: 50px;
+  width: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+.asidemenutop ul li {
+  list-style: none;
+}
+.asidemenutop ul li a {
+  text-decoration: none;
+  color: black;
+}
+.asidemenutop ul li a:hover {
+ color: green;
+}
+.asidemenubottom {
+  width: 300px;
+  border: 1px solid black;
+  margin-left: 50px;
+  height: 310px;
+  margin-top: 15px;
+}
+.asidemenubottom ul {
+  margin-left: 50px;
+  width: 200px;
+  line-height: 30px;
+  text-align: center;
+}
+.asidemenubottom ul li {
+  list-style: none;
+}
+.asidemenubottom ul li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.asidemenubottom ul li a:hover {
+  color: green;
+}
+.tieudetrang {
+  display: flex;
+  margin-top: 20px;
+}
+.menutieudetrang {
+  margin-left: 400px;
+}
+.menutieudetrang ul li {
+  list-style: none;
+  float: left;
+  margin-left: 10px;
+}
+.menutieudetrang ul li a {
+  text-decoration: none;
+  color: black;
+}
+.menutieudetrang ul li a:hover{
+  color: green;
+}
+.menutieudetrang ul li a i {
+  color: black;
+  margin-right: 5px;
+}
+.menutieudetrang hr {
+  width: 363px;
+  margin-top: 5px;
+}
+.sanphamtraicay {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 50px;
+  margin-top: 20px;
+}
+.sanphamtraicay h4{
+  font-size: 15px;
+}
+.traicay1 {
+  width: 220px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
+
+.traicay1 img {
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.traicay1 p {
+  color: red;
+  text-align: center;
+}
+.traicay1 h4 {
+  color: green;
+  text-align: center;
+}
+.traicay1:hover {
+  border: 3px solid green;
+  box-shadow: 0 0 5px;
+}
+.thongtinqua {
+  width: 220px;
+  height: 100px;
+}
+
+.thongtinqua p {
+  color: black;
+  font-size: 13px;
+}
+.thongtinqua button {
+  width: 150px;
+  height: 30px;
+  text-align: center;
+  margin-top: 10px;
+  margin-left: 30px;
+  border: 1px solid green;
+  color: green;
+  background: white;
+}
+.thongtinqua button:hover {
+  border: none;
+  color: white;
+  background: green;
+}
+footer {
+  margin-top: 35px;
+}
+@media (max-width: 768px) {
+  aside {
+    display: none;
+  }
+  .sanphamtraicay {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .menutieudetrang {
+    margin-left: 260px;
+  }
+  .menumain {
+    margin-left: 15px;
+    margin-top: 50px;
+  }
+  .sanphamtraicay{
+    margin-left: -15px;
+  }
+}
+@media(max-width: 412px){
+  .menutieudetrang {
+    display: none;
+  }
+  .sanphamtraicay{
+    margin-left: -32px;
+  }
+}
+@media(max-width: 500px){
+  .menutieudetrang {
+    display: none;
+  }
+  .sanphamtraicay{
+    margin-left: -18px;
+  }
+  .menumain {
+    margin-left: -2px;
+    margin-top: 50px;
+}
+}
